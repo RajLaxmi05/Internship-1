@@ -480,7 +480,7 @@ with cols[1].container(border=True, height="stretch"):
         categories=month_order,
         ordered=True
     )
-    monthly_weather = monthly_weather.sort_values("month")
+    monthly_weather = monthly_weather.sort_values("month_name")
 
     # Stacked bar chart
     fig = px.bar(
